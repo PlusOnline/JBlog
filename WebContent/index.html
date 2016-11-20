@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JBlog</title>
+	<!-- base css -->
+	<link rel="stylesheet" type="text/css" href="./resources/bootstrap-3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./resources/bootstrap-3.3.7/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="./resources/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./resources/sweetalert/sweetalert.css">
+	<!-- beyond css -->
+	<link rel="stylesheet" type="text/css" href="./static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="./static/css/animate.css">
+	<style type="text/css" media="screen">
+		body{
+			font-family: "仿宋"
+		}
+	</style>
+</head>
+<body ng-app="myApp" ng-controller="mainCtrl">
+	<nav class="navbar navbar-fixed-top" style="box-shadow: 0px 4px 10px #d3d3d3">
+		<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-group">
+			<span class="fa fa-search"></span>
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a href="javascript:void(0)" class="navbar-brand">LOGO</a>
+		</div>
+		
+		<div id="nav-group" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="#/outline">首页</a></li>
+				<li><a href="#list">列表</a></li>
+				<li><a href="#/news">新闻</a></li>
+				<li><a href="#/lab">实验室</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<div ng-view style="margin-top: 60px;"> 
+	</div>
+	<!-- base javascript -->
+	<script src="./resources/jquery-3.1.1/jquery-3.1.1.min.js"></script>
+	<script src="./resources/angular-1.5.8/angular.min.js"></script>
+	<script src="./resources/angular-1.5.8/angular-animate.min.js"></script>
+	<script src="./resources/angular-1.5.8/angular-cookies.min.js"></script>
+	<script src="./resources/angular-1.5.8/angular-route.min.js"></script>
+	<script src="./resources/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+	<script src="./resources/sweetalert/sweetalert.min.js"></script>
+	<script src="./resources/sweetalert/sweetalert-dev.js"></script>
+	
+	<!-- beyond javascript -->
+	<script src="./static/js/app.js"></script>
+	<script src="./static/js/controllers/OutlineCtrl.js"></script>
+	<script src="./static/js/controllers/ListCtrl.js"></script>
+	<script src="./static/js/controllers/NewsCtrl.js"></script>
+	<script src="./static/js/controllers/LabCtrl.js"></script>
+</body>
+</html>
